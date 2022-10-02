@@ -4,7 +4,26 @@
 ### Не очень
 
 // card и quote - это блоки
+
+// Некоторые компоненты требуют родительского враппера (или контейнера), который задает макет
+
 ```html
+<div class="l-card-container">
+  <div class="b-card card--special">
+    <div class="card__photo">Фото</div>
+    <card class="card__title card__title--main">Заголовок</card>
+    <div class="quote">
+      <div class="quote__line quote__is-active"></div>
+      <div class="quote__text quote__text--red"></div>
+    </div>
+  </div>
+</div>
+```
+
+
+
+```html
+
   <div class="card card--special">
     <div class="card__photo">Фото</div>
     <card class="card__title card__title--main">Заголовок</card>
