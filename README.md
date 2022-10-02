@@ -1,6 +1,49 @@
 # css-guidelines
 
 
+Главное как можно меньше вложенностей в css. Нахуй вложенности.
+
+Даже такой простой пример кода уже создает коллизии. Даже, если card с помощью scss сделать родителем, то коллизия классов text останется. 
+```html
+  <div class="card">
+    <div class="photo">Фото</div>
+    <card class="title">Заголовок карточки</card>
+    <card class="text">Текс карточки</card>
+    <div class="quote">
+      <div class="line"></div>
+      <div class="text">Текст цитаты</div>
+    </div>
+  </div>
+```
+### Так лучше
+```html
+  <div class="card">
+    <div class="card__photo">Фото</div>
+    <card class="card__title">Заголовок карточки</card>
+    <card class="card__text">Текс карточки</card>
+    <div class="quote">
+      <div class="quote__line"></div>
+      <div class="quote__text">Текст цитаты</div>
+    </div>
+  </div>
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### Не очень
 
 // card и quote - это блоки
