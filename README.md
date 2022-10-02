@@ -37,12 +37,12 @@
 
 // card и quote - это блоки
 ```html
-  <div class="b-card special">
+  <div class="b-card --special">
     <div class="card__photo">Фото</div>
-    <card class="card__title main">Заголовок</card>
+    <card class="card__title --main">Заголовок</card>
     <div class="b-quote">
-      <div class="quote__line is-active"></div>
-      <div class="quote__text red"></div>
+      <div class="quote__line --is-active"></div>
+      <div class="quote__text --red"></div>
     </div>
   </div>
 ```
@@ -50,13 +50,13 @@
 ```scss
 .b-card{
   border:1px solid black;
-  &.special{
+  &.--special{
     border:3px solid red;
   }
   
   .card__title{
     font-size: 30px;
-    &.main{
+    &.--main{
       color: yellowgreen;
     }
   }
@@ -66,14 +66,14 @@
 ```scss
 .b-card{
   border:1px solid black;
-  &.special{
+  &.--special{
     border:3px solid red;
   }
   
   .card__title{
     font-size: 30px;
   }
-  .card__title.main{
+  .card__title.--main{
       color: yellowgreen;
   }
 }
