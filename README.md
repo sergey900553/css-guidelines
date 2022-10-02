@@ -42,7 +42,7 @@
     <card class="card__title --main">Заголовок</card>
     <div class="b-quote">
       <div class="quote__line --is-active"></div>
-      <div class="quote__text --red"></div>
+      <div class="quote__text --red --cool-border"></div>
     </div>
   </div>
 ```
