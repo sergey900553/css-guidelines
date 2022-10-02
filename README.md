@@ -62,5 +62,20 @@
   }
 }
 ```
-
+или так
+```scss
+.b-card{
+  border:1px solid black;
+  &.special{
+    border:3px solid red;
+  }
+  
+  .card__title{
+    font-size: 30px;
+  }
+  .card__title.main{
+      color: yellowgreen;
+  }
+}
+```
 
