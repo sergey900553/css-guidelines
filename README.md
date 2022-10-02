@@ -28,6 +28,40 @@
   </div>
 ```
 
+Модификаторы с наследованием сильно удлиняют классы.
+```html
+  <div class="card card--special">
+    <div class="card__photo">Фото</div>
+    <card class="card__title card__title--main">Заголовок карточки</card>
+    <card class="card__text">Текс карточки</card>
+    <div class="quote">
+      <div class="quote__line"></div>
+      <div class="quote__text quote__text--red">Текст цитаты</div>
+    </div>
+  </div>
+  ```
+  ### Попытка сократить модификаторы
+  ```html
+  <div class="card --special">
+    <div class="card__photo">Фото</div>
+    <card class="card__title --main">Заголовок карточки</card>
+    <card class="card__text">Текс карточки</card>
+    <div class="quote">
+      <div class="quote__line"></div>
+      <div class="quote__text --red">Текст цитаты</div>
+    </div>
+  </div>
+  ```
+  
+
+
+
+
+
+
+
+
+
 
 
 
