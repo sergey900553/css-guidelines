@@ -103,7 +103,7 @@
     <div class="card__photo">Фото</div>
     <card class="card__title --main">Заголовок карточки</card>
     <card class="card__text">Текс карточки</card>
-    <button class="btn__card --is-active"></button>
+    <button class="btn__card is-active"></button>
   </div>
 ```
 
@@ -114,7 +114,7 @@
     <div class="card__photo">Фото</div>
     <card class="card__title --main">Заголовок карточки</card>
     <card class="card__text">Текс карточки</card>
-    <button class="btn__card --js-drop-down-menu-trigger"></button>
+    <button class="btn__card js-drop-down-menu-trigger"></button>
   </div>
 ```
 
