@@ -86,6 +86,15 @@
   </div>
 ```
 
+### Можно использовать базовый класс вместо миксинов, когда базовые стили для кнопки определяются в базовом классе.
+```html
+  <div class="card --special">
+    <div class="card__photo">Фото</div>
+    <card class="card__title --main">Заголовок карточки</card>
+    <card class="card__text">Текс карточки</card>
+    <button class="btn btn--card"></button>
+  </div>
+```
 
 
 
