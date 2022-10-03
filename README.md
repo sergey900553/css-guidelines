@@ -152,7 +152,19 @@
   </div>
 ```
 
-
+## Куда вкладывать компоненты
+```html
+  <div class="card ">
+    <div class="card__photo">Фото</div>
+    <card class="card__title">Заголовок карточки</card>
+    <card class="card__text">Текс карточки</card>
+    <div class="card__btn-group">
+      <button class="btn__card"></button>
+      <button class="btn__card"></button>
+      <button class="btn__card"></button>
+    </div>
+  </div>
+```
 
 
 
