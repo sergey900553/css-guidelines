@@ -82,7 +82,7 @@
     <div class="card__photo">Фото</div>
     <card class="card__title --main">Заголовок карточки</card>
     <card class="card__text">Текс карточки</card>
-    <button class="btn--card"></button>
+    <button class="btn__card"></button>
   </div>
 ```
 
@@ -92,7 +92,7 @@
     <div class="card__photo">Фото</div>
     <card class="card__title --main">Заголовок карточки</card>
     <card class="card__text">Текс карточки</card>
-    <button class="btn btn--card"></button>
+    <button class="btn btn__card"></button>
   </div>
 ```
 
@@ -103,7 +103,7 @@
     <div class="card__photo">Фото</div>
     <card class="card__title --main">Заголовок карточки</card>
     <card class="card__text">Текс карточки</card>
-    <button class="btn--card --is-active"></button>
+    <button class="btn__card --is-active"></button>
   </div>
 ```
 
@@ -114,15 +114,43 @@
     <div class="card__photo">Фото</div>
     <card class="card__title --main">Заголовок карточки</card>
     <card class="card__text">Текс карточки</card>
-    <button class="btn--card --js-drop-down-menu-trigger"></button>
+    <button class="btn__card --js-drop-down-menu-trigger"></button>
   </div>
 ```
 
 
+# Позиционирование
+## Для позиционирования блока исползуется класс, привязынный к родителю. В btn базовые стили, в btn__card позиционирование.
 
+```html
+  <div class="card ">
+    <div class="card__photo">Фото</div>
+    <card class="card__title">Заголовок карточки</card>
+    <card class="card__text">Текс карточки</card>
+    <button class="btn btn__card"></button>
+  </div>
+```
+## Либо миксин в css, когда в класс btn__card примикосваны базовые стили кнопки, а позиционирование уже делает как облычно в btn__card.
+```html
+  <div class="card ">
+    <div class="card__photo">Фото</div>
+    <card class="card__title">Заголовок карточки</card>
+    <card class="card__text">Текс карточки</card>
+    <button class="btn__card"></button>
+  </div>
+```
 
-
-
+## Для позиционирования вложенных HTML-элементов, в большинстве случаев, создается дополнительный элемент блока
+```html
+  <div class="card">
+    <div class="card__container">
+      <div class="card__photo">Фото</div>
+      <card class="card__title">Заголовок карточки</card>
+      <card class="card__text">Текс карточки</card>
+      <button class="btn__card"></button>
+    </div>
+  </div>
+```
 
 
 
