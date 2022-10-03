@@ -166,6 +166,25 @@
   </div>
 ```
 
+## Позиционирование элементов внутри блока
+Для позиционирования вложенных HTML-элементов, в большинстве случаев, создается дополнительный элемент блока (например, block__inner).
+```html
+<body class="page"> 
+  <div class="page__inner"> 
+    <!-- верхний колонтитул и навигация --> 
+    <header class="header">...</header> 
+    <!-- нижний колонтитул --> 
+    <footer class="footer">...</footer> 
+  </div> 
+</body>
+```
+```css
+.page__inner { 
+  margin-right: auto; 
+  margin-left: auto; 
+  width: 960px; 
+}
+```
 
 
 ## Может data-state?
