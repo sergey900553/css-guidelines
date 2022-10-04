@@ -219,3 +219,56 @@
 
 ## Наследование
 ![image](https://user-images.githubusercontent.com/42143402/193815845-4990612a-55dd-4fcc-b059-24776228d6f8.png)
+# Принцип единственной ответственности
+Используя принцип единственной ответственности в CSS, можно быть уверенным, что CSS-классы являются легко расширяемыми и переопределяемыми. Давайте рассмотрим следующий пример
+```css
+.button {
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  border-radius: 0.2rem;
+  background-color: #eb4934;
+  color: #fff;
+  font-weight: bold;
+}
+ 
+.button--secondary {
+  border-radius: 0;
+  font-size: 1rem;
+  background-color: #888;
+}
+```
+Видно, что если потребуется расширить класс .button с помощью модификатора .button--secondary, придётся выполнить много переопределений, хотя мы хотим всего лишь поменять цвет фона, сохранив стили по умолчанию.
+
+Проблема в том, что наш класс .button имеет несколько ролей:
+* Определяет блочную модель (padding)
+* Определяет типографику (font-size, font-weight)
+* Определяет внешний вид (color, background-color, border-radius)
+
+Так лучше 
+```css
+/* Общие стили */
+.button {
+  padding: 1rem 2rem;
+  font-weight: bold;
+  color: #fff;
+}
+ 
+/* Расширения стиля */
+.button--radialBorder {
+  border-radius: 0.2rem;
+}
+ 
+.button--large {
+  font-size: 2rem;
+}
+ 
+.button--primary {
+  background-color: #eb4934;
+}
+ 
+.button--secondary {
+  background-color: #888;
+}
+```
+
+
