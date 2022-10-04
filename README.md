@@ -192,9 +192,9 @@
 ```html
 <div class="block-1-style-and-it-position"></div>
 ```
-Лучше так:
+Лучше так: в блоке стили, в block-positio - позиция
 ```html
-<div class="block-1-style element-of-block-2-for-set-position-to-block-1"></div>
+<div class="block block-position"></div>
 ```
 Ну в крайнем случае так, если второй вариант не подходит по каким-то причинам:
 ```html
