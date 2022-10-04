@@ -216,3 +216,6 @@
 ```html
 <div class="block block_red">
 ```
+
+## Наследование
+![image](https://user-images.githubusercontent.com/42143402/193815845-4990612a-55dd-4fcc-b059-24776228d6f8.png)
