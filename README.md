@@ -158,10 +158,10 @@
     <div class="card__photo">Фото</div>
     <card class="card__title">Заголовок карточки</card>
     <card class="card__text">Текс карточки</card>
-    <div class="card__btn-group">
+    <div class="card__some-group">
       <button class="btn__card"></button>
       <button class="btn__card"></button>
-      <button class="btn__card"></button>
+      <a class="base-href" href="#"></a>
     </div>
   </div>
 ```
