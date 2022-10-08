@@ -181,6 +181,17 @@
   </div> 
 </body>
 ```
+Или
+```html
+<body> 
+  <div class="page page__inner"> 
+    <!-- верхний колонтитул и навигация --> 
+    <header class="header">...</header> 
+    <!-- нижний колонтитул --> 
+    <footer class="footer">...</footer> 
+  </div> 
+</body>
+```
 ```css
 .page__inner { 
   margin-right: auto; 
